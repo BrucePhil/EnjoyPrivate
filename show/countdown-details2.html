@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"> <![endif]-->
+<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>私享网</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/mystyle.css">
+<link rel="stylesheet" href="css/jquery.toastmessage.css">
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="reset-box-sizing">
+<div class="warp">
+  <div class="header" id="header"> </div>
+  <div class="container">
+  <div class="buy-fifterin buy-fifterin2" style="display:none;">
+    	<div class="title"><a href="javascript:" class="go-back">返回倒计时</a><a href="javascript:" class="close-btn"></a></div>
+        
+        <!--倒计时第一步-->
+        
+        <div class="buy-fifterback">
+        	<ul class="buy-step-l">
+            	<li class="first cur"><em></em><div class="current_1"></div>1.提交订单</li>
+                <li><em></em>2.选择支付方式</li>
+                <li class="end"><em></em>3.购买成功</li>
+                <i></i>
+            </ul>
+            <div class="clear"></div>
+            <div class="sh-title">选择收货地址</div>
+            <ul class="shadd shadd-title">
+            	<li>
+              	<span class="w1">勾选</span><span class="w2">收货人</span><span class="w3">所在地区</span><span class="w4">详细地址</span><span class="w5">邮编</span><span class="w6">电话/手机</span><span class="w7">操作</span>
+              </li>
+            </ul>
+            <ul class="shadd">
+              <li>
+              	<span class="w1"><input type="checkbox"></span><span class="w2">张宇轩</span><span class="w3">四川省 成都市 金牛区</span><span class="w4">交大路182号九里教师苑</span><span class="w5">610031</span><span class="w6">123456789</span><span class="w7">修改</span>
+              </li>
+              <li>
+              	<span class="w1"><input type="checkbox"></span><span class="w2">张宇轩</span><span class="w3">四川省 成都市 金牛区</span><span class="w4">交大路182号九里教师苑</span><span class="w5">610031</span><span class="w6">123456789</span><span class="w7">修改</span>
+              </li>
+              <li>
+              	<span class="w1"><input type="checkbox"></span><span class="w2">张宇轩</span><span class="w3">四川省 成都市 金牛区</span><span class="w4">交大路182号九里教师苑</span><span class="w5">610031</span><span class="w6">123456789</span><span class="w7">修改</span>
+              </li>
+            </ul>
+            <div class="sh-title">选择送货方式</div>
+            <ul class="kdlist">
+            	<li>经济快递(任意两件免运费)<br /><input type="checkbox"> 申通快递 ￥8.00</li>
+                <li>顺丰速递<br /><input type="checkbox"> ￥22.00</li>
+            </ul>
+            <ul class="buy-splist">
+              <li class="bt"><span class="t0">勾选</span><span class="t1">商品</span><span class="t2">单价</span><span class="t3">数量</span><span class="t4">总价</span><span class="t5">操作</span></li>
+            </ul>
+            <ul class="buy-splist">
+              <li><span class="t0"><input type="checkbox"></span><span class="t1">曲奇COOKIE</span><span class="t2">¥ 326</span><span class="t3"><a href="javascript:" class="jian"></a><input class="text" value="1" type="text"><a href="javascript:" class="jia"></a></span><span class="t4"><em class="red">326</em></span><span class="t5"><a href="javascript:">删除</a></span></li>
+              <li class="bz">备注：</li>
+              <li class="jb">代金券：<input type="checkbox">使用代币<input class="text" type="text">个 总共：<em>1233个</em></li>
+            </ul>
+            <h4 class="total">订单总价：<em>326元</em></h4>
+            <input type="submit" class="submit" value="提交订单">
+        </div>
+        
+
+		<!--倒计时第二步-->
+        
+        <div class="buy-fifterback" style="display:block;">
+        	<ul class="buy-step-l">
+            	<li class="first cur"><em></em><div></div>1.提交订单</li>
+                <li class="cur"><em></em><div class="current_2"></div>2.选择支付方式</li>
+                <li class="end"><em></em><div></div>3.购买成功</li>
+                <i></i>
+            </ul>
+            <div class="clear"></div>
+            <div class="buy-title">购买信息</div>
+            <ul class="dd-list">
+              <li><span class="t1">曲奇COOKIE</span><span class="t2">1份</span><span class="t3">应付总额：</span><span class="t4">326元</span></li>
+            </ul>
+          <div class="payment">
+           	<ul class="payment-title">
+            	  <li><a class="cur" href="javascript:">储蓄卡</a></li>
+              <li><a href="javascript:">信用卡</a></li>
+              <li><a href="javascript:">支付宝/财付通</a></li>
+       	    </ul>
+              <ul class="paychange">
+                <li>
+                        <input type="radio" name="RadioGroup1" value="0" id="RadioGroup1_0">
+                        <label for="RadioGroup1_0"><img src="images/pay01.jpg" alt=""></label>
+                     
+                </li>
+                <li>
+                		<input type="radio" name="RadioGroup1" value="1" id="RadioGroup1_1">
+                        <label for="RadioGroup1_1"><img src="images/pay02.jpg" alt=""></label>	
+                </li>
+                <li>
+                		<input type="radio" name="RadioGroup1" value="2" id="RadioGroup1_2">
+                        <label for="RadioGroup1_2"><img src="images/pay03.jpg" alt=""></label>	
+                </li>
+                <li>
+                		<input type="radio" name="RadioGroup1" value="3" id="RadioGroup1_3">
+                        <label for="RadioGroup1_3"><img src="images/pay04.jpg" alt=""></label>	
+                </li>
+                <li>
+                		<input type="radio" name="RadioGroup1" value="4" id="RadioGroup1_4">
+                        <label for="RadioGroup1_4"><img src="images/pay05.jpg" alt=""></label>	
+                </li>
+                <li>
+                		<input type="radio" name="RadioGroup1" value="5" id="RadioGroup1_5">
+                        <label for="RadioGroup1_5"><img src="images/pay06.jpg" alt=""></label>	
+                </li>
+                <li>
+                		<input type="radio" name="RadioGroup1" value="6" id="RadioGroup1_6">
+                        <label for="RadioGroup1_6"><img src="images/pay07.jpg" alt=""></label>	
+                </li>
+                <li>
+                		<input type="radio" name="RadioGroup1" value="7" id="RadioGroup1_7">
+                        <label for="RadioGroup1_7"><img src="images/pay08.jpg" alt=""></label>	
+                </li>
+                <li>
+                		<input type="radio" name="RadioGroup1" value="8" id="RadioGroup1_8">
+                        <label for="RadioGroup1_8"><img src="images/pay09.jpg" alt=""></label>	
+                </li>
+                <li>
+                		<input type="radio" name="RadioGroup1" value="9" id="RadioGroup1_9">
+                        <label for="RadioGroup1_9"><img src="images/pay10.jpg" alt=""></label>	
+                </li>
+                <li>
+                		<input type="radio" name="RadioGroup1" value="10" id="RadioGroup1_10">
+                        <label for="RadioGroup1_10"><img src="images/pay11.jpg" alt=""></label>	
+                </li>
+                <li>
+                		<input type="radio" name="RadioGroup1" value="11" id="RadioGroup1_11">
+                        <label for="RadioGroup1_11"><img src="images/pay12.jpg" alt=""></label>	
+                </li>
+                <li>
+                		<input type="radio" name="RadioGroup1" value="12" id="RadioGroup1_12">
+                        <label for="RadioGroup1_12"><img src="images/pay13.jpg" alt=""></label>	
+                </li>
+                <li>
+                		<input type="radio" name="RadioGroup1" value="13" id="RadioGroup1_13">
+                        <label for="RadioGroup1_13"><img src="images/pay14.jpg" alt=""></label>	
+                </li>
+                <li>
+                		<input type="radio" name="RadioGroup1" value="14" id="RadioGroup1_14">
+                        <label for="RadioGroup1_14"><img src="images/pay15.jpg" alt=""></label>	
+                </li>
+                <li>
+                		<input type="radio" name="RadioGroup1" value="15" id="RadioGroup1_15">
+                        <label for="RadioGroup1_15"><img src="images/pay16.jpg" alt=""></label>	
+                </li>
+              </ul>
+          </div>
+             <div class="payment-btn">
+              	<a class="b1" href="javascript:">立即付款</a><a class="b2" href="javascript:">淘宝购买</a>
+          </div>
+        </div>
+        
+    </div>
+    <!--支付方式第三步-->
+    <div class="payment-zt" style="display:none;">
+    	<div class="title">付款提示<img src="images/pay-close-btn.png" alt="" class="c"></div>
+        <div class="ptxt">
+        	<h3>请您在新打开的页面上完成付款。</h3>
+            付款完成前请不要关闭此窗口。<br />
+            完成付款后请根据您的情况点击下面的按钮:
+        </div>
+        <div class="pbtn"><a class="b1" href="javascript:">已完成付款</a><a class="b2" href="javascript:">付款遇到问题</a></div>
+        <div class="payment-other"><a href="javascript:">返回选择其他付款方式</a></div>
+    </div>
+  	
+  </div>
+    <div class="container footer">
+        <dl class="list l25 pull-left">
+            <dt><em>版权信息</em>Copyright</dt>
+            <dd>网站所有版权归圈叉网网络信息平台所有<br>新ICP备 05017822号<br>&copy;2013-2014</dd>
+        </dl>
+        <dl class="list l38 pull-left">
+            <dt><em>联系我们</em>Contact Us</dt>
+            <dd>服务热线 010-59788888<br>
+                官网网址 www.ooxx.com<br>
+                电子邮箱 ooxx@ooxx.com(投稿)；ooxx@hotmail.com（商业合作）
+            </dd>
+        </dl>
+        <dl class="list lw200 pull-right">
+            <dt><em>网站地图</em>SiteMap</dt>
+            <dd>
+                <a href="index-in.html">网站首页</a>
+                <a href="contact.html">联系我们</a>
+                <a href="suggestion.html">投诉建议</a>
+                <a href="javascript:">网站地图</a>
+                <a href="cooperation.html">商业合作</a>
+                <a href="ad.html">广告投放</a>
+                <a href="law.html">法律隐私</a>
+                <a href="about-us.html">关于我们</a>
+            </dd>
+        </dl>
+    </div>
+<div class="copyright container">
+    <span class="pull-left">2014-2015&copy;  PRESERVE. All rights reserved.</span>
+    <span class="pull-right">&copy; 所有版权归圈叉网所有</span>
+</div>
+			<div style="display:none" id="footer"></div>
+</div>
+
+<script src="js/jquery-1.11.3.min.js"></script> 
+<script src="js/jquery.toastmessage.js"></script> 
+<script src="js/common.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script>
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<div class="form-group">
+    <div class="col-sm-offset-1 col-sm-10">
+        <div class="well text-center form-control-static well-sm">
+            {{pageData.steps.D01.step}}
+            {{pageData.steps.D01.name}}
+        </div>
+    </div>
+    <div class="col-sm-offset-1 col-sm-10">
+        <div class="well text-center">
+            <img style="width: 60%;" src="{{pageData.steps.D01.data.img}}"/>
+        </div>
+    </div>
+    <div class="col-sm-offset-4 col-sm-6">
+
+        <input type="submit" value="确定" class="btn btn-info btn-sm">
+        <input class="btn btn-warning btn-sm" onclick="history.go(-1);" type="button"
+               value="返回"/>
+    </div>
+</div>

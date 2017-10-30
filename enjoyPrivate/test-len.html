@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<p id="txt1">
+	认证，是一种信用保证形式。按照国际标准化组织（ISO）和国际电工委员会（IEC）的定义，是指由国家认可的认证机构证明一个组织的产品、服务、管理体系符合相关标准、技术规范（TS）或其强制性要求的合格评定活动。
+</p>
+<span id="more-qm1">更多</span>
+<span id="more-sh1">收起</span>
+<p id="txt2">
+	认证，是一种信用保证形式。按照国际标准化组织（ISO）和国际电工委员会（IEC）的定义，是指由国家认可的认证机构证明一个组织的产品、服务、管理体系符合相关标准、技术规范（TS）或其强制性要求的合格评定活动。
+</p>
+<span id="more-qm">更多</span>
+<span id="more-sh">收起</span>
+<script type="text/javascript" src="http://120.27.162.169/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		
+		var txtVal1 = $("#txt1").text();
+          var txt1 ="";
+             if(txtVal1.length>40){
+                 var subTxt1 = txtVal1.substring(0,40);
+                 txt1 = subTxt1;
+                 $("#more-qm1").show();
+                 $("#txt1").text(txt1);
+				 $("#more-sh1").hide();
+              }
+			
+			else {
+				 $("#more-sh1").hide();
+				 $("#more-qm1").hide(); 
+			}
+			
+          $("#more-qm1").click(function(){
+              $("#txt1").text(txtVal1);
+               $(this).hide();
+              $("#more-sh1").show();
+          });
+
+          $("#more-sh1").click(function(){
+              var txtVal1 = $("#txt1").text();
+              var txt1 ="";
+              if(txtVal1.length>40){
+
+                  var subTxt1 = txtVal1.substring(0,40);
+                  txt1 = subTxt1;
+                  $("#more-qm1").show();
+                  $("#txt1").text(txt1);
+              }
+              $(this).hide();
+              $("#more-qm1").show();
+          });
+
+          var txtVal2 = $("#txt2").text();
+          var txt2 ="";
+             if(txtVal2.length>40){
+                 var subTxt2 = txtVal2.substring(0,40);
+                 txt2 = subTxt2;
+                 $("#more-qm").show();
+                 $("#txt2").text(txt2);
+				 $("#more-sh").hide();
+              }
+			
+			else {
+				 $("#more-sh").hide();
+				 $("#more-qm").hide(); 
+			}
+			
+          $("#more-qm").click(function(){
+              $("#txt2").text(txtVal2);
+               $(this).hide();
+              $("#more-sh").show();
+          });
+
+          $("#more-sh").click(function(){
+              var txtVal2 = $("#txt2").text();
+              var txt2 ="";
+              if(txtVal2.length>40){
+
+                  var subTxt2 = txtVal2.substring(0,40);
+                  txt2 = subTxt2;
+                  $("#more-qm").show();
+                  $("#txt2").text(txt2);
+              }
+              $(this).hide();
+              $("#more-qm").show();
+          });
+})
+</script>
+</body>
+</html>

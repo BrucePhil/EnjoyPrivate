@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body { background:#000000; font-family:Microsoft Yahei; }
+.lgoin-bar { height:230px; border-bottom:5px solid #ffda47; }
+.lgoin-bar .logo { width:975px; height:62px; line-height:62px; margin:0 auto; padding:106px 0 0 0; color:#fff; font-size:30px; }
+.lgoin-bar .logo img { width:204px; height:61px; display:inline-block; *display:inline; *zoom:1; vertical-align:top; margin:0 50px 0 0; }
+ul.login-info { padding:136px 0 0 0; width:975px; margin:0 auto; }
+ul.login-info li { height:60px; padding:0 0 45px 0; }
+ul.login-info li i.txt { display:inline-block; *display:inline; *zoom:1; vertical-align:top; width:204px; height:60px; line-height:60px; text-align:right; color:#ffffff; font-size:23px; font-weight:bold; padding:0 0 0 47px; font-style:normal; padding:0 46px 0 0; }
+ul.login-info li input.text { width:504px; height:58px; padding:0 10px; border:1px solid #717171; display:inline-block; display:inline-block; *display:inline; *zoom:1; vertical-align:top; background:#000; color:#ccc; font-size:23px; font-family:Microsoft Yahei; }
+ul.login-info li label.check { color:#ffffff; font-size:20px; display:inline-block; *display:inline; *zoom:1; height:24px; line-height:24px; padding:0 0 0 44px; position:relative; cursor:pointer; }
+ul.login-info li.rem { height:24px; line-height:24px; margin:0 0 0 -13px; }
+ul.login-info li label.check input { display:none; }
+ul.login-info li label.check i { width:24px; height:24px; position:absolute; left:10px; top:0; background:url(../images/check-out.png) no-repeat; }
+ul.login-info li label.check-cur i { background:url(../images/check-in.png) no-repeat; }
+ul.login-info li.btn { height:50px; margin:96px 0 0 0; }
+ul.login-info li.btn input.submit { width:172px; height:50px; background:url(../images/login-btn.png) no-repeat; border:none; cursor:pointer; display:inline-block; *display:inline; *zoom:1; cursor:pointer; }

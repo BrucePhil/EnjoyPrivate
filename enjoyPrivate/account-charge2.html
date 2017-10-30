@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"> <![endif]-->
+<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>私享网-消息提示</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/jquery.toastmessage.css">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="reset-box-sizing">
+<div class="warp">
+    <div class="header" style="display:none" id="header"></div>
+            <div class="header"> 
+            <div class="container top-bar">
+	<div class="logo pull-left">
+		<a href="/enjoyPrivate"><img alt="" src="images/logo.png"></a>
+	</div>
+	<div class="serch-bar pull-right" id="topMenu">
+            <ul class="bar-list">
+                <li><a class="notice" href="javascript:">设为首页</a></li>
+                <li><a href="shopping-cart.html"><img alt="" src="images/icon-01.png">购物车<em id="carCount">1</em></a></li>
+                <li><a href="order-list.html"><img alt="" src="images/icon-02.png">我的订单<em id="orderCount">14</em></a></li>
+                <li class="sub">
+                    <img alt="" src="images/icon-03.png">我的消息<em id="newsCount">0</em>
+                    <ul>
+                        <li><a href="message-01-system.html">系统信息<em>+5</em></a></li>
+                        <li><a href="message-02-fans.html">粉丝信息<em>+5</em></a></li>
+                        <li><a href="message-03-letters.html">我的私信<em>+5</em></a></li>
+                        <li><a href="message-04-share.html">我的转发<em>+5</em></a></li>
+                        <li><a href="message-05-comment.html">我的评论<em>+5</em></a></li>
+                    </ul>
+                </li>
+                <li class="sub live">
+                    <img alt="" src="images/icon-05.png">账号设置
+                    <ul>
+                        <li><a href="account-setting-01-security.html">账号安全</a></li>
+                        <li><a href="account-setting-02-bind.html">账号绑定</a></li>
+                        <li><a href="account-setting-03-privacy.html">隐私设置</a></li>
+                        <li><a href="account-setting-04-message.html">消息设置</a></li>
+                        <li><a href="account-setting-05-favor.html">偏好设置</a></li>
+                        <li><a href="account-setting-06-password.html">修改密码</a></li>
+                        <li><a href="login.html">退出</a></li>
+                    </ul>
+                </li>
+                <li><a class="notice" href="homepage-all.html">用户昵称</a></li>
+            </ul>
+            <div class="serch-btn">
+                <input type="text" class="text" value="搜索"><input type="button" class="button">
+            </div>
+        </div>
+</div>
+<div class="container">
+        <div id="mainmenu" class="nav pull-left">
+            <a href="index-in.html" class="">首页</a>
+            <a href="countdown.html" class="cur">倒计时</a>
+            <a href="jingxuan-index.html">精选</a>
+            <a href="yiqi-index.html">一起</a>
+            <a href="star-01-homepage.html">明星</a>
+            <a href="famous-person.html">名人堂</a>
+            <a href="diningroom.html">餐厅</a>
+            <a href="options.html">摄影</a>
+            <a href="options.html">设计</a>
+            <a href="options.html">艺术</a>
+        </div>
+        <div class="myuser pull-right">
+            <a href="homepage-logined.html"><img alt="" src="images/login-icon.png"> 大笨象的私享</a>
+        </div>
+    </div></div>
+    <div class="account-charge mgb50" style="background: #fff;">
+        <div class="container">
+            <p class="charge-step">
+                <span>1.提交订单</span>
+                <span class="cur">2.选择支付方式</span>
+                <span class="last">3.购买成功</span>
+            </p>
+            <h1>购买信息</h1>
+            <div class="charge-info">
+                <img src="images/tem/score_03.png" alt=""/>
+                <span class="name">私享牌超甜棒棒糖</span>
+                <span class="num">1份</span>
+                <span class="price">应付总额：<em>326元</em></span>
+            </div>
+            <div class="payment">
+                <ul class="payment-title">
+                    <li><a class="cur" href="javascript:">储蓄卡</a></li>
+                    <li><a href="javascript:">信用卡</a></li>
+                    <li><a href="javascript:">支付宝/财付通</a></li>
+                </ul>
+                <ul class="paychange">
+                    <li>
+                        <input type="radio" name="RadioGroup1" value="0" id="RadioGroup1_0">
+                        <label for="RadioGroup1_0"><img src="images/pay01.jpg" alt=""></label>
+
+                    </li>
+                    <li>
+                        <input type="radio" name="RadioGroup1" value="1" id="RadioGroup1_1">
+                        <label for="RadioGroup1_1"><img src="images/pay02.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="RadioGroup1" value="2" id="RadioGroup1_2">
+                        <label for="RadioGroup1_2"><img src="images/pay03.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="RadioGroup1" value="3" id="RadioGroup1_3">
+                        <label for="RadioGroup1_3"><img src="images/pay04.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="RadioGroup1" value="4" id="RadioGroup1_4">
+                        <label for="RadioGroup1_4"><img src="images/pay05.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="RadioGroup1" value="5" id="RadioGroup1_5">
+                        <label for="RadioGroup1_5"><img src="images/pay06.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="RadioGroup1" value="6" id="RadioGroup1_6">
+                        <label for="RadioGroup1_6"><img src="images/pay07.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="RadioGroup1" value="7" id="RadioGroup1_7">
+                        <label for="RadioGroup1_7"><img src="images/pay08.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="RadioGroup1" value="8" id="RadioGroup1_8">
+                        <label for="RadioGroup1_8"><img src="images/pay09.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="RadioGroup1" value="9" id="RadioGroup1_9">
+                        <label for="RadioGroup1_9"><img src="images/pay10.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="RadioGroup1" value="10" id="RadioGroup1_10">
+                        <label for="RadioGroup1_10"><img src="images/pay11.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="RadioGroup1" value="11" id="RadioGroup1_11">
+                        <label for="RadioGroup1_11"><img src="images/pay12.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="RadioGroup1" value="12" id="RadioGroup1_12">
+                        <label for="RadioGroup1_12"><img src="images/pay13.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="RadioGroup1" value="13" id="RadioGroup1_13">
+                        <label for="RadioGroup1_13"><img src="images/pay14.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="RadioGroup1" value="14" id="RadioGroup1_14">
+                        <label for="RadioGroup1_14"><img src="images/pay15.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="RadioGroup1" value="15" id="RadioGroup1_15">
+                        <label for="RadioGroup1_15"><img src="images/pay16.jpg" alt=""></label>
+                    </li>
+                </ul>
+            </div>
+            <div class="payment-btn">
+                <a class="b1" href="javascript:">立即付款</a><a class="b2" href="javascript:">淘宝购买</a>
+            </div>
+        </div>
+    </div>
+    <div class="container footer">
+        <dl class="list l25 pull-left">
+            <dt><em>版权信息</em>Copyright</dt>
+            <dd>网站所有版权归圈叉网网络信息平台所有<br>新ICP备 05017822号<br>&copy;2013-2014</dd>
+        </dl>
+        <dl class="list l38 pull-left">
+            <dt><em>联系我们</em>Contact Us</dt>
+            <dd>服务热线 010-59788888<br>
+                官网网址 www.ooxx.com<br>
+                电子邮箱 ooxx@ooxx.com(投稿)；ooxx@hotmail.com（商业合作）
+            </dd>
+        </dl>
+        <dl class="list lw200 pull-right">
+            <dt><em>网站地图</em>SiteMap</dt>
+            <dd>
+                <a href="index-in.html">网站首页</a>
+                <a href="contact.html">联系我们</a>
+                <a href="suggestion.html">投诉建议</a>
+                <a href="javascript:">网站地图</a>
+                <a href="cooperation.html">商业合作</a>
+                <a href="ad.html">广告投放</a>
+                <a href="law.html">法律隐私</a>
+                <a href="about-us.html">关于我们</a>
+            </dd>
+        </dl>
+    </div>
+<div class="copyright container">
+    <span class="pull-left">2014-2015&copy;  PRESERVE. All rights reserved.</span>
+    <span class="pull-right">&copy; 所有版权归圈叉网所有</span>
+</div>
+			<div style="display:none" id="footer"></div>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.toastmessage.js"></script>
+<script src="js/common.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

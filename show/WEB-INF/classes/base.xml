@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context   
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd
+        http://www.springframework.org/schema/tx   
+        http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+        http://www.springframework.org/schema/aop  
+        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+        http://www.springframework.org/schema/mvc    
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+    <import resource="classpath:spring-dataSource.xml"/>
+
+
+    <mvc:annotation-driven/>
+
+
+    <!--<mvc:resources mapping="../resources/**" location="../resources/"></mvc:resources>-->
+    <!--<mvc:resources mapping="/sweb/**" location="/sweb/"></mvc:resources>-->
+    <!--<mvc:resources mapping="/**" location="/sweb/"></mvc:resources>-->
+    <!--<mvc:resources mapping="/download/**" location="/download/"></mvc:resources>-->
+    <mvc:resources mapping="/res/**" location="/res/"></mvc:resources>
+
+
+    <!-- =========================================== 配置controller 和 url mapping. -->
+    <!--     <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/> -->
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"/>
+
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <context:component-scan base-package="com.ep.core"/>
+    <context:component-scan base-package="com.ep.blogic"/>
+
+
+    <!--<bean id="multipartResolver"-->
+    <!--class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>-->
+
+
+    <!-- 文件上传支持  -->
+    <bean id="multipartResolver" class="com.ep.core.util.filecore.PJCommonsMultipartResolver">
+        <property name="defaultEncoding" value="UTF-8"/>
+        <!-- 内存缓存1M -->
+        <property name="maxInMemorySize" value="1000000"></property>
+        <!-- 最大2GB -->
+        <property name="maxUploadSize" value="2000000000"></property>
+    </bean>
+
+
+    <bean id="defaultLobHandler"
+          class="org.springframework.jdbc.support.lob.DefaultLobHandler"
+          lazy-init="true" name="lobHandler"/>
+
+    <!--<mvc:interceptors>-->
+    <!--&lt;!&ndash;<bean class="com.hmzining.platform.controller.LoginSessionTimeOutInterceptor"></bean>&ndash;&gt;-->
+    <!--</mvc:interceptors>-->
+
+    <bean id="propertiesConfig" class="com.ep.core.util.PropertiesConfig">
+        <property name="fileDownloadURL" value="${commons.file.download.url}"></property>
+        <property name="fileUplaodPath" value="${commons.file.upload.path}"></property>
+    </bean>
+    <!-- 短信接口配置 -->
+     <bean id="propertiesSMS" class="com.ep.core.util.PropertiesSMS">
+        <property name="mainHost" value="${SMS.mainHost}"></property>
+        <property name="sendURL" value="${SMS.sendURL}"></property>
+        <property name="balanceURL" value="${SMS.balanceURL}"></property>
+        <property name="username" value="${SMS.username}"></property>
+        <property name="password" value="${SMS.password}"></property>
+    </bean>
+
+    <bean id="apnsConfig" class="com.ep.core.util.ApnsConfig">
+        <property name="password" value="${apns.password}"></property>
+        <property name="path" value="${apns.path}"></property>
+        <property name="evn" value="${apns.evn}"></property>
+    </bean>
+
+    <!-- Localization support beans -->
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename" value="messages"/>
+    </bean>
+
+    <bean id="localresolver" class="org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver"/>
+
+    <bean id="localeChangeInterceptor"
+          class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+        <property name="paramName" value="siteLanguage"/>
+    </bean>
+
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter"></bean>
+                <bean id="jsonHttpMessageConverter"
+                      class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+                    <property name="supportedMediaTypes">
+                        <list>
+                            <value>text/plain;charset=UTF-8</value>
+                            <!--<value>text/html;charset=UTF-8</value>-->
+                            <!--<value>application/octet-stream;charset=UTF-8</value>-->
+                        </list>
+                    </property>
+                </bean>
+                <bean class="org.springframework.http.converter.ResourceHttpMessageConverter"/>
+                <bean class="org.springframework.http.converter.xml.SourceHttpMessageConverter"/>
+                <bean class="org.springframework.http.converter.xml.XmlAwareFormHttpMessageConverter"/>
+                <bean class="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+        <property name="mediaTypes">
+            <map>
+                <entry key="json" value="application/json"/>
+                <entry key="xml" value="text/xml"/>
+                <entry key="htm" value="text/html"/>
+            </map>
+        </property>
+        <property name="defaultContentType" value="text/html; charset=UTF-8"/>
+    </bean>
+
+</beans>

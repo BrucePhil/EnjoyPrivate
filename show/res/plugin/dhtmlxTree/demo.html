@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" type="text/css" href="${ctx}/res/plugin/codebase/dhtmlxtree.css"/>
+    <script src="${ctx}/res/plugin/codebase/dhtmlxtree.js"></script>
+    <%--<script src="${ctx}/res/plugin/codebase/ext/dhtmlxtree_json.js"></script>--%>
+</head>
+<body>
+<table>
+    <tr>
+        <td valign="top">
+            <div id="treeboxbox_tree" style="width:250px; height:218px;background-color:#f5f5f5;border :1px solid Silver;"></div>
+        </td>
+        <td style="padding-left:25px;" valign="top">
+
+            <br>
+            <br>
+            <a href="javascript:void(0);" onClick="alert(tree.getAllChecked());">Get list of checked</a><br><br>
+            <a href="javascript:void(0);" onClick="alert(tree.getAllUnchecked());">Get list of unchecked</a><br><br>
+            <a href="javascript:void(0);" onClick="alert(tree.getAllPartiallyChecked());">Get list of partially checked</a><br><br>
+            <a href="javascript:void(0);" onClick="alert(tree.getAllCheckedBranches());">Get list of checked branches</a><br><br>
+        </td>
+    </tr>
+
+</table>
+
+
+<script>
+    $(function() {
+        window.tree = new dhtmlXTreeObject("treeboxbox_tree","100%","100%",0);
+
+
+        tree.setImagePath("${ctx}/res/plugin/codebase/imgs/dhxtree_skyblue/");
+        tree.enableCheckBoxes(1);
+        tree.enableThreeStateCheckboxes(true);
+//        tree.enableSmartXMLParsing(true);
+        var jsondata = {id:0, item:[{id:1,text:"first"},{id:2, text:"middle", item:[{id:"21", text:"child"},{id:"22", text:"child2"}]},{id:3,text:"last"}]};
+        tree.loadJSONObject(jsondata,function() {
+        });
+        tree.attachEvent("onBeforeContextMenu", function(itemId) {
+            alert(itemId);
+            if (tree.hasChildren(itemId) > 0) {
+                menu.hideItem('outher');
+            } else {
+                menu.showItem('outher');
+            }
+            return true;
+        });
+    });
+
+</script>
+</body>
+</html>

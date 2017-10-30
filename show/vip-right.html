@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"> <![endif]-->
+<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>私享网-会员特权</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/mystyle.css">
+<link rel="stylesheet" href="css/jquery.toastmessage.css">
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="reset-box-sizing">
+	<div class="warp">
+		<div class="header" style="display:none" id="header"></div>
+            <div class="header"> 
+            <div class="container top-bar">
+	<div class="logo pull-left">
+		<a href="/enjoyPrivate"><img alt="" src="images/logo.png"></a>
+	</div>
+	<div class="serch-bar pull-right" id="topMenu">
+            <ul class="bar-list">
+                <li><a class="notice" href="javascript:">设为首页</a></li>
+                <li><a href="shopping-cart.html"><img alt="" src="images/icon-01.png">购物车<em id="carCount">1</em></a></li>
+                <li><a href="order-list.html"><img alt="" src="images/icon-02.png">我的订单<em id="orderCount">14</em></a></li>
+                <li class="sub">
+                    <img alt="" src="images/icon-03.png">我的消息<em id="newsCount">0</em>
+                    <ul>
+                        <li><a href="message-01-system.html">系统信息<em>+5</em></a></li>
+                        <li><a href="message-02-fans.html">粉丝信息<em>+5</em></a></li>
+                        <li><a href="message-03-letters.html">我的私信<em>+5</em></a></li>
+                        <li><a href="message-04-share.html">我的转发<em>+5</em></a></li>
+                        <li><a href="message-05-comment.html">我的评论<em>+5</em></a></li>
+                    </ul>
+                </li>
+                <li class="sub live">
+                    <img alt="" src="images/icon-05.png">账号设置
+                    <ul>
+                        <li><a href="account-setting-01-security.html">账号安全</a></li>
+                        <li><a href="account-setting-02-bind.html">账号绑定</a></li>
+                        <li><a href="account-setting-03-privacy.html">隐私设置</a></li>
+                        <li><a href="account-setting-04-message.html">消息设置</a></li>
+                        <li><a href="account-setting-05-favor.html">偏好设置</a></li>
+                        <li><a href="account-setting-06-password.html">修改密码</a></li>
+                        <li><a href="login.html">退出</a></li>
+                    </ul>
+                </li>
+                <li><a class="notice" href="homepage-all.html">用户昵称</a></li>
+            </ul>
+            <div class="serch-btn">
+                <input type="text" class="text" value="搜索"><input type="button" class="button">
+            </div>
+        </div>
+</div>
+<div class="container">
+        <div id="mainmenu" class="nav pull-left">
+            <a href="index-in.html" class="">首页</a>
+            <a href="countdown.html" class="cur">倒计时</a>
+            <a href="jingxuan-index.html">精选</a>
+            <a href="yiqi-index.html">一起</a>
+            <a href="star-01-homepage.html">明星</a>
+            <a href="famous-person.html">名人堂</a>
+            <a href="diningroom.html">餐厅</a>
+            <a href="options.html">摄影</a>
+            <a href="options.html">设计</a>
+            <a href="options.html">艺术</a>
+        </div>
+        <div class="myuser pull-right">
+            <a href="homepage-logined.html"><img alt="" src="images/login-icon.png"> 大笨象的私享</a>
+        </div>
+    </div></div>
+        <div class="container">
+            <div class="userinfo-title userinfo-coun-title">
+                <div class="ltxt pull-left">会员权益</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+		<div class="container">
+            <div class="sh-stab">
+                <a class="cur" href="javascript:">会员特权<i></i></a>
+                <a href="javascript:">会员卡介绍<i></i></a>
+                <a href="javascript:">办卡流程<i></i></a>
+                <a href="javascript:">会员须知<i></i></a>
+                <a href="javascript:">申请/激活会员卡<i></i></a>
+                <a href="javascript:">积分兑换<i></i></a>
+                <div class="clear"></div>
+            </div>
+            <div class="vip-content" id="vipPri">
+                <ul id="vipPrivilegeList">
+                    <li>
+                        <img class="pri-img" src="images/privilege_01.png" alt=""/>
+                        <p>每消费1元获得1积分，<br/>不足1元部分不计入积分；<br>积分可兑换精美礼品</p>
+                    </li>
+                    <li>
+                        <img class="pri-img" src="images/privilege_02.png" alt=""/>
+                        <p>不定期开放会员日，<br/>会员日期间消费，<br/>积分随机倍数获得</p>
+                    </li>
+                    <li>
+                        <img class="pri-img" src="images/privilege_03.png" alt=""/>
+                        <p>会员生日月份消费， <br/>即享双倍积分；</p>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+		    <div class="vip-content">
+                <img id="vipCard" src="images/vip-card.jpg" alt=""/>
+		    </div>
+            <div class="vip-content">
+                <ul id="vipCardProcessList">
+                    <li>
+                        <p class="pro-title">第1步</p>
+                        <div class="font">
+                            <p class="middle">点击“申请/激活会员卡”链接</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="pro-title">第2步</p>
+                        <div class="font">
+                            <p class="middle">点击“申请会员卡”链接</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="pro-title">第3步</p>
+                        <div class="font">
+                            <p class="middle">填写用户姓名、性别、<br>生日、身份证号、手机号码、<br>常用邮箱和收卡地址</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="pro-title">第4步</p>
+                        <div class="font">
+                            <p class="middle">上传本人公民身份证<br>正反面照片用于会员卡<br>安全及信息审核；</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="pro-title">第5步</p>
+                        <div class="font">
+                            <p class="middle">申请会员卡成功，<br>邮寄会员卡</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="pro-title">第6步</p>
+                        <div class="font">
+                            <p class="middle">收到会员卡，<br>确认会员卡无损伤</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="pro-title">第7步</p>
+                        <div class="font">
+                            <p class="middle">点击“申请/激活会员卡”链接</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="pro-title">第8步</p>
+                        <div class="font">
+                            <p class="middle">点击“激活会员卡”链接</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="pro-title">第9步</p>
+                        <div class="font">
+                            <p class="middle">输入会员卡卡号、<br>设置会员卡密码，<br>点击“激活”；</p>
+                        </div>
+                    </li>
+                    <li class="last-child">
+                        <p class="pro-title">第10步</p>
+                        <div class="font">
+                            <p class="middle">激活成功<br>尽享尊贵</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="vip-content">
+                <div class="vip-notice">
+                    一二三四五，上山打老虎
+                </div>
+            </div>
+            <div class="vip-content">
+                <div class="abtn">
+                    <span id="applyBtn">申请会员卡</span>
+                    <span id="activeBtn">激活会员卡</span>
+                </div>
+                <div id="applyActionFormBox">
+                    <form action="" id="applyVipForm">
+                        <ul class="form-list">
+                            <li>
+                                <span class="txt">姓名</span>
+                                <input type="text" name="name" placeholder="请输入姓名"/>
+                            </li>
+                            <li>
+                                <span class="txt">性别</span>
+                                <div class="select-box" id="genderSelect">
+                                    <input type="hidden" name="gender" value="male"/>
+                                    <span>男</span>
+                                    <ul>
+                                        <li data-value="男">男</li>
+                                        <li data-value="女">女</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="txt">生日</span>
+                                <div class="select-box">
+                                    <input type="hidden" name="birthyear" value="1990"/>
+                                    <span>1990</span>
+                                    <ul>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                        <li data-value="1990">1990</li>
+                                    </ul>
+                                </div>
+                                <div class="select-box">
+                                    <input type="hidden" name="birthmonth" value="2"/>
+                                    <span>2</span>
+                                    <ul>
+                                        <li data-value="1">1</li>
+                                        <li data-value="2">2</li>
+                                        <li data-value="3">3</li>
+                                        <li data-value="4">4</li>
+                                        <li data-value="5">5</li>
+                                        <li data-value="6">6</li>
+                                        <li data-value="7">7</li>
+                                    </ul>
+                                </div>
+                                <div class="select-box">
+                                    <input type="hidden" name="birthday" value="1"/>
+                                    <span>1</span>
+                                    <ul>
+                                        <li data-value="1">1</li>
+                                        <li data-value="2">2</li>
+                                        <li data-value="3">3</li>
+                                        <li data-value="4">4</li>
+                                        <li data-value="5">5</li>
+                                        <li data-value="6">6</li>
+                                        <li data-value="7">7</li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li>
+                                <span class="txt">身份证号</span>
+                                <input type="text" name="id" placeholder="请输入身份证号"/>
+                            </li>
+                            <li>
+                                <span class="txt">手机号码</span>
+                                <input type="tel" name="phone" placeholder="请输入手机号"/>
+                            </li>
+                            <li>
+                                <span class="txt">常用邮箱</span>
+                                <input type="text" name="email" placeholder="请输入邮箱"/>
+                            </li>
+                            <li class="card-address">
+                                <span class="txt">收卡地址</span>
+                                <textarea name="address" placeholder="请输入收卡地址"></textarea>
+                            </li>
+                            <li>
+                                <span class="txt">身份证正面照</span>
+                                <div class="pic-selection">
+                                    <span>选择图片</span>
+                                    <input type="file" name="idPicFront"/>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="txt">身份证反面照</span>
+                                <div class="pic-selection">
+                                    <span>选择图片</span>
+                                    <input type="file" name="idPicBack"/>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="confirm-btn">申请</p>
+                    </form>
+                    <form action="" id="activeVipForm">
+                        <ul class="form-list">
+                            <li>
+                                <span class="txt">会员卡卡号</span>
+                                <input type="text" name="vipCardNum" placeholder="请输入会员卡卡号"/>
+                            </li>
+                            <li>
+                                <span class="txt">设置密码</span>
+                                <input type="password" name="password" placeholder="请输入密码"/>
+                            </li>
+                            <li>
+                                <span class="txt">确认密码</span>
+                                <input type="password" name="confirmPassword" placeholder="请确认密码"/>
+                            </li>
+                        </ul>
+                        <p class="confirm-btn">激活</p>
+                    </form>
+                </div>
+            </div>
+            <div class="vip-content">
+                <ul id="scoreExchangeList">
+                    <li>
+                        <img class="score-ex-img" src="images/tem/score_11.png" alt=""/>
+                        <p class="score-exchange-name">私享牌超甜棒棒糖</p>
+                        <i class="score-exchange-num">145</i><span>积分</span>
+                        <p class="score-ex-account">
+                            <a class="jian" href="javascript:"><img src="images/g-jian.png" alt=""></a>
+                            <input class="text" type="text" value="1">
+                            <a class="jia" href="javascript:"><img src="images/g-jia.png" alt=""></a>
+                        </p>
+                        <span class="confirm-btn">确认兑换</span>
+                    </li>
+                    <li>
+                        <img class="score-ex-img" src="images/tem/score_05.png" alt=""/>
+                        <p class="score-exchange-name">私享牌超甜棒棒糖</p>
+                        <i class="score-exchange-num">145</i><span>积分</span>
+                        <p class="score-ex-account">
+                            <a class="jian" href="javascript:"><img src="images/g-jian.png" alt=""></a>
+                            <input class="text" type="text" value="1">
+                            <a class="jia" href="javascript:"><img src="images/g-jia.png" alt=""></a>
+                        </p>
+                        <span class="confirm-btn">确认兑换</span>
+                    </li>
+                    <li>
+                        <img class="score-ex-img" src="images/tem/score_07.png" alt=""/>
+                        <p class="score-exchange-name">私享牌超甜棒棒糖</p>
+                        <i class="score-exchange-num">145</i><span>积分</span>
+                        <p class="score-ex-account">
+                            <a class="jian" href="javascript:"><img src="images/g-jian.png" alt=""></a>
+                            <input class="text" type="text" value="1">
+                            <a class="jia" href="javascript:"><img src="images/g-jia.png" alt=""></a>
+                        </p>
+                        <span class="confirm-btn">确认兑换</span>
+                    </li>
+                    <li>
+                        <img class="score-ex-img" src="images/tem/score_09.png" alt=""/>
+                        <p class="score-exchange-name">私享牌超甜棒棒糖</p>
+                        <i class="score-exchange-num">145</i><span>积分</span>
+                        <p class="score-ex-account">
+                            <a class="jian" href="javascript:"><img src="images/g-jian.png" alt=""></a>
+                            <input class="text" type="text" value="1">
+                            <a class="jia" href="javascript:"><img src="images/g-jia.png" alt=""></a>
+                        </p>
+                        <span class="confirm-btn">确认兑换</span>
+                    </li>
+                    <li>
+                        <img class="score-ex-img" src="images/tem/score_11.png" alt=""/>
+                        <p class="score-exchange-name">私享牌超甜棒棒糖</p>
+                        <i class="score-exchange-num">145</i><span>积分</span>
+                        <p class="score-ex-account">
+                            <a class="jian" href="javascript:"><img src="images/g-jian.png" alt=""></a>
+                            <input class="text" type="text" value="1">
+                            <a class="jia" href="javascript:"><img src="images/g-jia.png" alt=""></a>
+                        </p>
+                        <span class="confirm-btn">确认兑换</span>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+                <div class="user-list-m"><a href="javascript:">加载更多</a></div>
+            </div>
+        </div>
+        <div class="container footer">
+            <dl class="list l25 pull-left">
+                <dt><em>版权信息</em>Copyright</dt>
+                <dd>网站所有版权归圈叉网网络信息平台所有<br>新ICP备 05017822号<br>&copy;2013-2014</dd>
+            </dl>
+            <dl class="list l38 pull-left">
+                <dt><em>联系我们</em>Contact Us</dt>
+                <dd>服务热线 010-59788888<br>
+                    官网网址 www.ooxx.com<br>
+                    电子邮箱 ooxx@ooxx.com(投稿)；ooxx@hotmail.com（商业合作）
+                </dd>
+            </dl>
+            <dl class="list lw200 pull-right">
+                <dt><em>网站地图</em>SiteMap</dt>
+                <dd>
+                    <a href="index-in.html">网站首页</a>
+                    <a href="contact.html">联系我们</a>
+                    <a href="suggestion.html">投诉建议</a>
+                    <a href="javascript:">网站地图</a>
+                    <a href="cooperation.html">商业合作</a>
+                    <a href="ad.html">广告投放</a>
+                    <a href="law.html">法律隐私</a>
+                    <a href="about-us.html">关于我们</a>
+                </dd>
+            </dl>
+        </div>
+<div class="copyright container">
+    <span class="pull-left">2014-2015&copy;  PRESERVE. All rights reserved.</span>
+    <span class="pull-right">&copy; 所有版权归圈叉网所有</span>
+</div>
+			<div style="display:none" id="footer"></div>
+	</div>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.form.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/messages_zh.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+        $(function(){
+            $('.vip-apply-selection li').click(function(){
+                var val = $(this).attr('data-value');
+                var input = $(this).closest('.vip-apply-selection').find('input[type="hidden"]');
+                input.val(val).siblings('span').html(val);
+            });
+            $('.abtn span').each(function(i) {
+                $(this).click(function(){
+                    $('#applyActionFormBox form').eq(i).show().siblings().hide();
+                })
+            });
+            $('.sh-stab a').each(function(i){
+                $(this).click(function(){
+                    $(this).addClass('cur').siblings().removeClass('cur');
+                    $('.vip-content').eq(i).show().siblings('.vip-content').hide();
+                })
+            })
+        })
+	</script>
+</body>
+</html>

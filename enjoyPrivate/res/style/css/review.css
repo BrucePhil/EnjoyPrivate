@@ -1,0 +1,71 @@
+.doc {
+	width: 439px;
+}
+
+.doc_title {
+	padding-top:10px; 
+	color:#454545;
+	padding-bottom:10px; 
+	font-weight:bold; 
+	font-size:20px;
+	line-height:30px;
+	text-align: center;
+	font-family:&#39;宋体&#39;;
+}
+
+.doc_content {
+	color:#4f593a; 
+	width:460px;
+	text-align:left; 
+	word-break:break-all;
+	font-size:16px;
+	line-height:26px;
+	font-family:&#39;仿宋&#39;;
+}
+
+.doc_content_short {
+	color:#4f593a;
+	line-height:24px; 
+}
+
+.doc_sign {
+	text-align:right; 
+	font-size:16px; 
+	color:#454545; 
+	line-height:26px;
+}
+
+.inline_sign {
+	position:relative;
+	padding-top: 0px; /* auto set px*/
+}
+
+.doc_seal {
+	position:absolute; 
+	right:12px; 
+	bottom:-50px; 
+	z-index:3;
+}
+/**
+初号     42pt     56px
+小初     36pt     48px
+一号     26pt     35px
+		25pt     34px
+小一     24pt     32px
+二号     22pt     29px
+		20pt     26px
+小二     18pt     24px
+		17pt     23px
+三号   	16pt     22px
+小三     15pt     21px
+	  14.5pt     20px
+四号     14pt     19px
+	  13.5pt     18px
+		13pt     17px
+小四     12pt     16px
+		11pt     15px
+五号   10.5pt     14px
+		10pt     13px
+小五      9pt     12px
+		 8pt     11px							  	  						
+*/

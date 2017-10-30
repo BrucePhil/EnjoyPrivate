@@ -1,0 +1,49 @@
+.content-body {
+    font-size: 12px;
+}
+
+.content-body .container-fluid {
+    padding: 0px;
+}
+
+.content-body table.table ul {
+    margin: auto;
+}
+
+label.error {
+    color: red;
+    font-weight: normal;
+}
+
+.content-body input[type=radio] {
+    margin-top: 3px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .content-body input[type=radio] {
+        margin-top: 1px;
+    }
+}
+
+th[onclick^=sort] {
+    cursor: pointer;
+}
+
+select.form-control {
+    padding: 6px;
+}
+.form-control {
+    font-size: 12px;
+
+}
+
+.property div[class^=col-sm] {
+    width: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.property div[class^=col-sm-3] {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}

@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("label.check input").click(function(e){
+			//e.preventDefault();
+			$("label.check").toggleClass("check-cur");
+		})	
+	})
+</script>
+<!--[if IE 6]>
+<script src="js/pngfix.js" language="javascript"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="lgoin-bar">
+  <div class="logo"><a href="javascript:"><img src="images/logo.png" alt=""></a>您好，欢迎使用私享家后台管理系统！</div>
+    </div>
+    <ul class="login-info">
+      <li>
+      	<i class="txt">用户名123</i><input type="text" placeholder="请输入用户名" class="text">
+      </li>
+      <li>
+      	<i class="txt">密　码</i><input type="text" placeholder="请输入密码" class="text">
+      </li>
+      <li class="rem"><i class="txt" style="height:24px; line-height:24px;"></i>
+          <label class="check">
+          	<i></i>
+            <input type="checkbox" name="CheckboxGroup1" value="0" id="CheckboxGroup1_0">
+            记住用户名</label>
+      </li>
+      <li class="btn"><i class="txt" style="height:50px; line-height:50px;"></i><input type="submit" value="" class="submit"></li>
+    </ul>
+</body>
+</html>

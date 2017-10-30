@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta http-equiv="Cache-Control" content="no-store"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="../plugin/bootstrap/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="../plugin/bootstrap/css/bootstrap-theme.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/login.css" type="text/css"/>
+
+    <!--jquery-->
+    <script type="text/javascript" src="../plugin/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../plugin/jquery/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../plugin/jquery/additional-methods.min.js"></script>
+    <script type="text/javascript" src="../plugin/jquery/messages_zh.js"></script>
+    <style>
+        body {
+            font-size: 11px;
+        }
+
+        .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+            border: 1px solid #000;
+        }
+
+        table.table th {
+            background-color: rgb(192, 192, 192);
+        }
+
+        #activityTable.table td, #activityTable.table th {
+            text-align: center;
+            vertical-align: middle;
+            width: 8%;
+        }
+
+        #activityTable.table td.text-left, #activityTable.table th.text-left {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <table id="activityTable" class="table table-bordered table-responsive">
+        <tr>
+            <th colspan="12">
+                市场活动申请表
+            </th>
+        </tr>
+        <tr>
+            <td></td>
+            <th>申请人：</th>
+            <td>黄莉</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th>申请时间：</th>
+            <td>10/16/14</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th colspan="12">
+                门店信息
+            </th>
+        </tr>
+        <tr>
+            <th>区域</th>
+            <th>城市</th>
+            <th>县/区</th>
+            <th colspan="3">客户名</th>
+            <th>门店数</th>
+            <th>活动门店数</th>
+            <th colspan="4">活动门店名称（不是所有门店参与活动时填写）</th>
+        </tr>
+        <tr>
+            <td>川南</td>
+            <td>宜宾</td>
+            <td>兴文</td>
+            <td colspan="3">孕婴美</td>
+            <td>3</td>
+            <td>3</td>
+            <td colspan="4"></td>
+        </tr>
+
+
+        <tr>
+            <th colspan="12">
+                活动品牌及主题
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">品牌</th>
+            <th colspan="3">活动时间</th>
+            <th colspan="3">活动主题</th>
+            <th colspan="4">活动阶段</th>
+        </tr>
+        <tr>
+            <td colspan="2">贝拉米</td>
+            <td colspan="3"> 2014年10月25日-2014年11月30日</td>
+            <td colspan="3">动销激励</td>
+            <td colspan="4">新客延续</td>
+
+        </tr>
+
+        <tr>
+            <th colspan="12">
+                终端信息
+            </th>
+        </tr>
+        <tr>
+            <th rowspan="2">首批进货（元）</th>
+            <th colspan="2" rowspan="2">月均动销（听）</th>
+            <th colspan="3">竞品1活动投入情况</th>
+            <th colspan="3">竞品2活动投入情况</th>
+            <th colspan="3">竞品3活动投入情况</th>
+        </tr>
+        <tr>
+            <th>品牌</th>
+            <th colspan="2">活动投入情况</th>
+            <th>品牌</th>
+            <th colspan="2">活动投入情况</th>
+            <th>品牌</th>
+            <th colspan="2">活动投入情况</th>
+        </tr>
+        <tr>
+            <td>6000</td>
+            <td colspan="2"> 5</td>
+            <td>纽菲特</td>
+            <td colspan="2" class="text-left">
+                1、老板:<br/>
+                2、采购：<br/>
+                3、店长：<br/>
+                4、店员：统一提成0.03个点<br/>
+                5、消费者：买6送1，买10送2
+            </td>
+            <td>玛米力</td>
+            <td colspan="2" class="text-left">
+                1、老板：<br/>
+                2、采购：<br/>
+                3、店长:<br/>
+                4、店员：<br/>
+                5、消费者：消费者8赠1
+            </td>
+            <td></td>
+            <td colspan="2" class="text-left">
+                1、老板:<br/>
+                2、采购：<br/>
+                3、店长：<br/>
+                4、店员：<br/>
+                5、消费者：
+            </td>
+
+        </tr>
+        <tr>
+            <th>活动内容</th>
+            <td colspan="11" class="text-left">
+                一、系统：(丰尚绿野承担）<br/>
+                8件送1件<br/>
+                二、店员:(丰尚绿野承担）<br/>
+                1.新客30元/个<br/>
+                2.在系统原有提成的基础上在给到每听10元提成。<br/>
+                三、消费者:<br/> 1.买8送1（孕婴美承担）<br/>
+                四、备注:<br/> 1.新客需要公司客服部回访成功后才算有效新客，没有回访成功者不算。 <br/>
+                2.消费者活动由孕婴美承担赠品。 <br/>
+                3.活动期间，孕婴美每周需提供一次活动动销数据以及新客数据。<br/>
+            </td>
+        </tr>
+        <tr>
+            <th rowspan="4">活动费用</th>
+            <th>活动预算费用</th>
+            <td>2000</td>
+            <th rowspan="4">新客费</th>
+            <th>活动新客目标</th>
+            <td></td>
+            <th rowspan="4">门店动销费用</th>
+            <th>活动动销目标（元）</th>
+            <td></td>
+            <th rowspan="4">门店进货费用</th>
+            <th>活动进货目标</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th rowspan="2">公司承担费用
+            </th>
+            <td rowspan="2">1000</td>
+            <th>实际新客提交数</th>
+            <td></td>
+            <th>活动动销目标（元）</th>
+            <td></td>
+            <th>实际进货</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>实际新客有效数</th>
+            <td></td>
+            <th>实际动销数</th>
+            <td></td>
+            <th>实际货补数量</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>客户承担费用</th>
+            <td>1000</td>
+            <th>新客金额</th>
+            <td></td>
+            <th>动销金额</th>
+            <td></td>
+            <th>货补金额</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th colspan="2">实际金额（含货补金额）合计</th>
+            <td colspan="2"></td>
+            <th>备注</th>
+            <td colspan="7"></td>
+        </tr>
+        <tr>
+            <th colspan="12">核销流程</th>
+        </tr>
+        <tr>
+            <th>核销方式</th>
+            <th>核销依据</th>
+            <th>销售核销依据应提交时间</th>
+            <th>实际提交核销依据时间</th>
+            <th>实际核销方式</th>
+            <th>提交财务时间</th>
+            <th>未通过原因</th>
+            <th>市场经理签字时间</th>
+            <th>财务填写报销单时间</th>
+            <th>销售提供收款人签收表时间</th>
+            <th>客户姓名与电话</th>
+            <th>是否与客户电话确认</th>
+        </tr>
+        <tr>
+            <td>现金支付</td>
+            <td>1.所有新客数据以客服部回访明明细，和门店销售的POS截图为准</td>
+            <td>活动结束15日内</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th rowspan="6">活动跟进</th>
+            <th colspan="5">第一次</th>
+            <th colspan="6">第二次</th>
+        </tr>
+        <tr>
+            <th>时间</th>
+            <th>事项</th>
+            <th>标准</th>
+            <th colspan="2">跟进结果</th>
+            <th>时间</th>
+            <th>事项</th>
+            <th>标准</th>
+            <th colspan="3">跟进结果</th>
+        </tr>
+        <tr>
+            <td>10月31日</td>
+            <td>动销目标达成以及新客数据</td>
+            <td></td>
+            <td colspan="2"></td>
+            <td>11月10日</td>
+            <td>动销目标达成以及新客数据</td>
+            <td></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <th colspan="5">第三次</th>
+            <th colspan="6">第四次</th>
+        </tr>
+        <tr>
+            <th>时间</th>
+            <th>事项</th>
+            <th>标准</th>
+            <th colspan="2">跟进结果</th>
+            <th>时间</th>
+            <th>事项</th>
+            <th>标准</th>
+            <th colspan="3">跟进结果</th>
+        </tr>
+        <tr>
+            <td>11月20日</td>
+            <td>动销目标达成以及新客数据</td>
+            <td></td>
+            <td colspan="2"></td>
+            <td>11月30日</td>
+            <td>动销目标达成以及新客数据</td>
+            <td></td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+</div>
+
+
+</body>
+</html>
